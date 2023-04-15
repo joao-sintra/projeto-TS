@@ -9,3 +9,16 @@ C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\proje
 C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.CoreCompileInputs.cache
 C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.exe
 C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\Client1.exe.config
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\Client1.exe
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\Client1.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\ProtocolSI.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.AssemblyReference.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.SuggestedBindingRedirects.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.Properties.Resources.resources
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.GenerateResource.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.CoreCompileInputs.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.CopyComplete
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.exe
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.Cliente1.resources
