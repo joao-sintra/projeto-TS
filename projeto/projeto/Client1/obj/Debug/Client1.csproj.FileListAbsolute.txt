@@ -1,0 +1,11 @@
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\bin\Debug\Client1.exe.config
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\bin\Debug\Client1.exe
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\bin\Debug\Client1.pdb
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.AssemblyReference.cache
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.SuggestedBindingRedirects.cache
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.Form1.resources
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.Properties.Resources.resources
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.GenerateResource.cache
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.CoreCompileInputs.cache
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.exe
+C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\projeto\projeto\Client1\obj\Debug\Client1.pdb
