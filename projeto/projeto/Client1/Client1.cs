@@ -22,16 +22,11 @@ namespace Client1 {
 
         public Cliente1() {
             InitializeComponent();
-           /* IPEndPoint endpoint = new IPEndPoint(IPAddress.Loopback, PORT);
-            client = new TcpClient();
-            client.Connect(endpoint);
-            networkStream = client.GetStream();
-            protocolSI = new ProtocolSI();*/
+           
         }
         private string EnviarDados(string message, string ipAddress, string ipPorto) {
             // CRIAR UM CLIENTE TCP
             TcpClient tcpClient = null;
-
             // CRIAR A NETWORK STREAM PARA PODER COMUNICAR COM O SERVIDOR
             NetworkStream networkStream = null;
 
@@ -92,20 +87,8 @@ namespace Client1 {
                 }
             }
         }
-        // Método do botão enviar
-        private void buttonSend_Click(object sender, EventArgs e) {
-            string msg = txtMensagem.Text;
-            txtMensagem.Clear();
-
-            //Cria uma mensagem/pacote de um tipo específico
-            byte[] packet = protocolSI.Make(ProtocolSICmdType.DATA, msg);
-            networkStream.Write(packet, 0, packet.Length);
-            while (protocolSI.GetCmdType() != ProtocolSICmdType.ACK) {
-                networkStream.Read(protocolSI.Buffer, 0,
-                    protocolSI.Buffer.Length);
-            }
-            // O envio de bits/bytes é trivial recorrendo ao ProtocolSI.
-        }
+        
+        
 
         // Método para fechar o Client
         private void CloseClient() {
@@ -133,6 +116,29 @@ namespace Client1 {
         }
 
         private void btEnviarMensagem_Click(object sender, EventArgs e) {
+            //tetste
+            string response = EnviarDados(txtMensagem.Text, txtIP.Text, txtPorto.Text).ToString();
+            txtConsola.AppendText("Resposta do server 01: " + response +
+                Environment.NewLine);
+        }
+
+        private void Cliente1_Load(object sender, EventArgs e) {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btIDefinicoesIni_Click(object sender, EventArgs e) {
+            tabControl1.SelectedTab = Definicoes;
+        }
+
+        private void btInicioDef_Click(object sender, EventArgs e) {
+            tabControl1.SelectedTab = Inicio;
+        }
+
+        private void btEnviarMensagem_Click_1(object sender, EventArgs e) {
             string response = EnviarDados(txtMensagem.Text, txtIP.Text, txtPorto.Text).ToString();
             txtConsola.AppendText("Resposta do server 01: " + response +
                 Environment.NewLine);
