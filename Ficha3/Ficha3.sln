@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ficha3-Client", "Ficha3\Ficha3-Client.csproj", "{F8D1E98D-8FBA-498B-A17D-F9256D3012B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ficha3-Server", "Ficha3-Server\Ficha3-Server.csproj", "{A364BC5F-143F-4F9F-85AA-03EF25DFB3DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8D1E98D-8FBA-498B-A17D-F9256D3012B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D1E98D-8FBA-498B-A17D-F9256D3012B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D1E98D-8FBA-498B-A17D-F9256D3012B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D1E98D-8FBA-498B-A17D-F9256D3012B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A364BC5F-143F-4F9F-85AA-03EF25DFB3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A364BC5F-143F-4F9F-85AA-03EF25DFB3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A364BC5F-143F-4F9F-85AA-03EF25DFB3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A364BC5F-143F-4F9F-85AA-03EF25DFB3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBD7C4B9-85E9-4F67-B096-D2D97ABF2BC9}
+	EndGlobalSection
+EndGlobal
