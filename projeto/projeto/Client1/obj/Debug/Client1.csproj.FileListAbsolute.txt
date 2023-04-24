@@ -22,3 +22,15 @@ C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.exe
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.pdb
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.Cliente1.resources
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\bin\Debug\Client1.exe.config
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\bin\Debug\Client1.exe
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\bin\Debug\Client1.pdb
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.csproj.AssemblyReference.cache
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.csproj.SuggestedBindingRedirects.cache
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.Cliente1.resources
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.Properties.Resources.resources
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.csproj.GenerateResource.cache
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.csproj.CoreCompileInputs.cache
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.csproj.CopyComplete
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.exe
+C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.pdb

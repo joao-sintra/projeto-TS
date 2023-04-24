@@ -142,6 +142,17 @@ namespace Client1 {
             string response = EnviarDados(txtMensagem.Text, txtIP.Text, txtPorto.Text).ToString();
             txtConsola.AppendText("Resposta do server 01: " + response +
                 Environment.NewLine);
+
+            txtMensagem.Text = "";
+            txtMensagem.Focus(); 
+        }
+
+        private void txtMensagem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btEnviarMensagem.PerformClick();
+            }
         }
     }
 }
