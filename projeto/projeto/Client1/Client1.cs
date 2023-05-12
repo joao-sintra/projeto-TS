@@ -21,8 +21,10 @@ namespace Client1 {
 
 
         public Cliente1() {
+            
             InitializeComponent();
-           
+            tabControl2.SelectedTab = paginaLogin;
+
         }
         private string EnviarDados(string message, string ipAddress, string ipPorto) {
             // CRIAR UM CLIENTE TCP
@@ -126,22 +128,52 @@ namespace Client1 {
 
         }
 
-        private void label1_Click(object sender, EventArgs e) {
+       
 
-        }
-
-        private void btIDefinicoesIni_Click(object sender, EventArgs e) {
-            tabControl1.SelectedTab = Definicoes;
-        }
-
-        private void btInicioDef_Click(object sender, EventArgs e) {
-            tabControl1.SelectedTab = Inicio;
-        }
+       
 
         private void btEnviarMensagem_Click_1(object sender, EventArgs e) {
             string response = EnviarDados(txtMensagem.Text, txtIP.Text, txtPorto.Text).ToString();
             txtConsola.AppendText("Resposta do server 01: " + response +
                 Environment.NewLine);
+        }
+
+        private void btInicioIni_Click(object sender, EventArgs e) {
+            tabControl1.SelectedTab = Inicio;
+        }
+
+        private void btIDefinicoesIni_Click_1(object sender, EventArgs e) {
+            tabControl1.SelectedTab = Definicoes;
+        }
+
+        private void label5_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btRegistar_Click(object sender, EventArgs e) {
+            tabControl2.SelectedTab = paginaRegisto;
+        }
+
+        private void btEntrarLogin_Click(object sender, EventArgs e) {
+            tabControl2.SelectedTab = Menus;
+        }
+
+        private void btTerminarSessao_Click(object sender, EventArgs e) {
+            //Colocar a validação para terminar a sessao colocar false
+            tabControl2.SelectedTab = paginaLogin;
+        }
+
+        private void btVoltarLogin_Click(object sender, EventArgs e) {
+            tabControl2.SelectedTab = paginaLogin;
+        }
+
+        private void btRegistarUtilizador_Click(object sender, EventArgs e) {
+            //Fazer o Registo na base de dados e logar o utilizador
+            tabControl2.SelectedTab = Menus;
+        }
+
+        private void btIrFormRegistar_Click(object sender, EventArgs e) {
+            tabControl2.SelectedTab = paginaRegisto;
         }
     }
 }
