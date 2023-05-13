@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente1));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabSecundaria = new System.Windows.Forms.TabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
             this.txtConsola = new System.Windows.Forms.TextBox();
             this.btEnviarMensagem = new System.Windows.Forms.Button();
@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIP = new System.Windows.Forms.TextBox();
             this.txtPorto = new System.Windows.Forms.TextBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPrincipal = new System.Windows.Forms.TabControl();
             this.Menus = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -63,10 +63,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtNomeRegisto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.tabSecundaria.SuspendLayout();
             this.Inicio.SuspendLayout();
             this.Definicoes.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.tabPrincipal.SuspendLayout();
             this.Menus.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -78,15 +78,15 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabSecundaria
             // 
-            this.tabControl1.Controls.Add(this.Inicio);
-            this.tabControl1.Controls.Add(this.Definicoes);
-            this.tabControl1.Location = new System.Drawing.Point(201, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1139, 702);
-            this.tabControl1.TabIndex = 33;
+            this.tabSecundaria.Controls.Add(this.Inicio);
+            this.tabSecundaria.Controls.Add(this.Definicoes);
+            this.tabSecundaria.Location = new System.Drawing.Point(201, -22);
+            this.tabSecundaria.Name = "tabSecundaria";
+            this.tabSecundaria.SelectedIndex = 0;
+            this.tabSecundaria.Size = new System.Drawing.Size(1139, 727);
+            this.tabSecundaria.TabIndex = 33;
             // 
             // Inicio
             // 
@@ -97,7 +97,7 @@
             this.Inicio.Location = new System.Drawing.Point(4, 22);
             this.Inicio.Name = "Inicio";
             this.Inicio.Padding = new System.Windows.Forms.Padding(3);
-            this.Inicio.Size = new System.Drawing.Size(1131, 676);
+            this.Inicio.Size = new System.Drawing.Size(1131, 701);
             this.Inicio.TabIndex = 0;
             this.Inicio.Text = "Inicio";
             this.Inicio.UseVisualStyleBackColor = true;
@@ -215,25 +215,25 @@
             this.txtPorto.TabIndex = 41;
             this.txtPorto.Text = "10000";
             // 
-            // tabControl2
+            // tabPrincipal
             // 
-            this.tabControl2.Controls.Add(this.Menus);
-            this.tabControl2.Controls.Add(this.paginaLogin);
-            this.tabControl2.Controls.Add(this.paginaRegisto);
-            this.tabControl2.Location = new System.Drawing.Point(2, 1);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1348, 731);
-            this.tabControl2.TabIndex = 34;
+            this.tabPrincipal.Controls.Add(this.Menus);
+            this.tabPrincipal.Controls.Add(this.paginaLogin);
+            this.tabPrincipal.Controls.Add(this.paginaRegisto);
+            this.tabPrincipal.Location = new System.Drawing.Point(2, -20);
+            this.tabPrincipal.Name = "tabPrincipal";
+            this.tabPrincipal.SelectedIndex = 0;
+            this.tabPrincipal.Size = new System.Drawing.Size(1348, 752);
+            this.tabPrincipal.TabIndex = 34;
             // 
             // Menus
             // 
             this.Menus.Controls.Add(this.panel5);
-            this.Menus.Controls.Add(this.tabControl1);
+            this.Menus.Controls.Add(this.tabSecundaria);
             this.Menus.Location = new System.Drawing.Point(4, 22);
             this.Menus.Name = "Menus";
             this.Menus.Padding = new System.Windows.Forms.Padding(3);
-            this.Menus.Size = new System.Drawing.Size(1340, 705);
+            this.Menus.Size = new System.Drawing.Size(1340, 726);
             this.Menus.TabIndex = 0;
             this.Menus.Text = "Menu";
             this.Menus.UseVisualStyleBackColor = true;
@@ -340,7 +340,7 @@
             this.paginaLogin.Location = new System.Drawing.Point(4, 22);
             this.paginaLogin.Name = "paginaLogin";
             this.paginaLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.paginaLogin.Size = new System.Drawing.Size(1340, 705);
+            this.paginaLogin.Size = new System.Drawing.Size(1340, 726);
             this.paginaLogin.TabIndex = 1;
             this.paginaLogin.Text = "Login";
             // 
@@ -351,7 +351,7 @@
             this.paginaRegisto.Controls.Add(this.panel2);
             this.paginaRegisto.Location = new System.Drawing.Point(4, 22);
             this.paginaRegisto.Name = "paginaRegisto";
-            this.paginaRegisto.Size = new System.Drawing.Size(1340, 705);
+            this.paginaRegisto.Size = new System.Drawing.Size(1340, 726);
             this.paginaRegisto.TabIndex = 2;
             this.paginaRegisto.Text = "Registo";
             // 
@@ -533,7 +533,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.tabControl2);
+            this.Controls.Add(this.tabPrincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -543,12 +543,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente 1";
             this.Load += new System.EventHandler(this.Cliente1_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabSecundaria.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
             this.Inicio.PerformLayout();
             this.Definicoes.ResumeLayout(false);
             this.Definicoes.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
+            this.tabPrincipal.ResumeLayout(false);
             this.Menus.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -568,7 +568,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabSecundaria;
         private System.Windows.Forms.TabPage Inicio;
         private System.Windows.Forms.TextBox txtConsola;
         private System.Windows.Forms.Button btEnviarMensagem;
@@ -580,7 +580,7 @@
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.TextBox txtPorto;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl tabPrincipal;
         private System.Windows.Forms.TabPage Menus;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
