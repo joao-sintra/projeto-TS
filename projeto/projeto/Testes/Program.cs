@@ -96,7 +96,7 @@ namespace Testes {
             client.Send(Packet.Serialize(publicKeyPacket));
 
 
-            client.Receive();
+            client.Receive(true);
 
             //rsa.Decrypt(client.ecryptedAesKey);
             Console.WriteLine("Server AES key:");
@@ -133,7 +133,8 @@ namespace Testes {
             Packet messagePacket = new Packet(1001);
             messagePacket.SetPayload(mensagemEncriptada);
             client.Send(Packet.Serialize(messagePacket));
-            client.Receive();
+            client.Send(Packet.Serialize(messagePacket));
+            client.Receive(true);
 
             //Console.WriteLine("Mensagem decriptada: ");
             byte[] msgDecrypt = aes.Decrypt(client.dados);

@@ -55,7 +55,7 @@ namespace Client1 {
             publicKeyPacket.SetPayload(rsa.ExportPublicKey());
             //Send the packet to Server
             client.Send(Packet.Serialize(publicKeyPacket));
-            client.Receive();
+            client.Receive(true);
             this.aesKey = rsa.Decrypt(client.ecryptedAesKey);
         }
         private static string SendAndReciveMessage(Client client, byte[] aesKey, string message) {
@@ -70,7 +70,7 @@ namespace Client1 {
             Packet messagePacket = new Packet(Pacote.MESSAGE);
             messagePacket.SetPayload(mensagemEncriptada);
             client.Send(Packet.Serialize(messagePacket));
-            client.Receive();
+            client.Receive(true);
 
             //Console.WriteLine("Mensagem decriptada: ");
             byte[] msgDecrypt = aes.Decrypt(client.dados);
@@ -163,7 +163,7 @@ namespace Client1 {
                 messagePacket.SetPayload(mensagemEncriptada);
                 client.Send(Packet.Serialize(messagePacket));
 
-                client.Receive();
+                client.Receive(true);
 
                 byte[] msgDecrypt = aes.Decrypt(client.login);
                 string validacao = Encoding.UTF8.GetString(msgDecrypt, 0, msgDecrypt.Length);
@@ -181,7 +181,7 @@ namespace Client1 {
                 messagePacket.SetPayload(mensagemEncriptada);
                 client.Send(Packet.Serialize(messagePacket));
 
-                client.Receive();
+                client.Receive(true);
 
                 //Console.WriteLine("Mensagem decriptada: ");
                 byte[] msgDecrypt = aes.Decrypt(client.registo);

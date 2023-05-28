@@ -61,7 +61,7 @@ namespace Servidor {
                     if(db.Auths.Any(u => u.Username == userName)) {
                         packet.SetPayload(aes.Encrypt(Encoding.ASCII.GetBytes("false")));
                     } else {
-                        var auth = new Auth { Username = userName, Password = password, isOnline =true };
+                        var auth = new Auth { Username = userName, Password = password };
                         db.Auths.Add(auth);
                         db.SaveChanges();
                         packet.SetPayload(aes.Encrypt(Encoding.ASCII.GetBytes("true")));
