@@ -6,7 +6,6 @@ C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servido
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\obj\Debug\Servidor.csproj.CoreCompileInputs.cache
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\obj\Debug\Servidor.exe
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\obj\Debug\Servidor.pdb
-C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\ProtocolSI.dll
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\obj\Debug\Servidor.csproj.CopyComplete
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Servidor\bin\Debug\Servidor.exe.config
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Servidor\bin\Debug\Servidor.exe
@@ -17,3 +16,8 @@ C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de A
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Servidor\obj\Debug\Servidor.csproj.CopyComplete
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Servidor\obj\Debug\Servidor.exe
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Servidor\obj\Debug\Servidor.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\protoip.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.SqlServer.xml

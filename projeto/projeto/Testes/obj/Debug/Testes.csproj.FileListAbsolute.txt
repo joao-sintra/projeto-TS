@@ -1,0 +1,10 @@
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\Testes.exe.config
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\Testes.exe
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\Testes.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\protoip.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.csproj.AssemblyReference.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.csproj.SuggestedBindingRedirects.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.csproj.CoreCompileInputs.cache
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.csproj.CopyComplete
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.exe
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.pdb

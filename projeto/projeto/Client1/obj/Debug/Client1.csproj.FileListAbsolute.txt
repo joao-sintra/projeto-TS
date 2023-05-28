@@ -12,7 +12,6 @@ C:\Users\kikof\OneDrive - IPLeiria\Desktop\TrabalhosIPLeiria\2_Semestre\TS\proje
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\Client1.exe.config
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\Client1.exe
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\Client1.pdb
-C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\ProtocolSI.dll
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.AssemblyReference.cache
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.csproj.SuggestedBindingRedirects.cache
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\obj\Debug\Client1.Properties.Resources.resources
@@ -34,3 +33,8 @@ C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de A
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.csproj.CopyComplete
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.exe
 C:\Users\ruben\OneDrive - IPLeiria\Documents\TESP PSI (IPL)\Desenvolvimento de Aplicações e TS\TS\Repos\projeto\projeto\Client1\obj\Debug\Client1.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\protoip.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.SqlServer.xml
