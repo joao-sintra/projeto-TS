@@ -26,7 +26,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
+            this.btConversar = new System.Windows.Forms.Button();
+            this.listaClientesConnectados = new System.Windows.Forms.ListBox();
             this.txtConsola = new System.Windows.Forms.TextBox();
+            this.btEnviarMensagem = new System.Windows.Forms.Button();
             this.txtMensagem = new System.Windows.Forms.TextBox();
             this.Definicoes = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,9 +40,14 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Menus = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.nomeUser = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btTerminarSessao = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btIDefinicoesIni = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btInicioIni = new System.Windows.Forms.Button();
             this.paginaLogin = new System.Windows.Forms.TabPage();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,12 +66,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtNomeRegisto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.nomeUser = new System.Windows.Forms.Label();
-            this.btTerminarSessao = new System.Windows.Forms.Button();
-            this.btIDefinicoesIni = new System.Windows.Forms.Button();
-            this.btInicioIni = new System.Windows.Forms.Button();
-            this.btEnviarMensagem = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Inicio.SuspendLayout();
             this.Definicoes.SuspendLayout();
@@ -86,21 +89,45 @@
             this.tabControl1.Location = new System.Drawing.Point(201, -22);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1139, 727);
+            this.tabControl1.Size = new System.Drawing.Size(969, 430);
             this.tabControl1.TabIndex = 33;
             // 
             // Inicio
             // 
+            this.Inicio.Controls.Add(this.button1);
+            this.Inicio.Controls.Add(this.btConversar);
+            this.Inicio.Controls.Add(this.listaClientesConnectados);
             this.Inicio.Controls.Add(this.txtConsola);
             this.Inicio.Controls.Add(this.btEnviarMensagem);
             this.Inicio.Controls.Add(this.txtMensagem);
             this.Inicio.Location = new System.Drawing.Point(4, 22);
             this.Inicio.Name = "Inicio";
             this.Inicio.Padding = new System.Windows.Forms.Padding(3);
-            this.Inicio.Size = new System.Drawing.Size(1131, 701);
+            this.Inicio.Size = new System.Drawing.Size(961, 404);
             this.Inicio.TabIndex = 0;
             this.Inicio.Text = "Inicio";
             this.Inicio.UseVisualStyleBackColor = true;
+            // 
+            // btConversar
+            // 
+            this.btConversar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConversar.Location = new System.Drawing.Point(766, 320);
+            this.btConversar.Name = "btConversar";
+            this.btConversar.Size = new System.Drawing.Size(101, 34);
+            this.btConversar.TabIndex = 44;
+            this.btConversar.Text = "Conversar";
+            this.btConversar.UseVisualStyleBackColor = true;
+            this.btConversar.Click += new System.EventHandler(this.btConversar_Click);
+            // 
+            // listaClientesConnectados
+            // 
+            this.listaClientesConnectados.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listaClientesConnectados.FormattingEnabled = true;
+            this.listaClientesConnectados.ItemHeight = 21;
+            this.listaClientesConnectados.Location = new System.Drawing.Point(682, 16);
+            this.listaClientesConnectados.Name = "listaClientesConnectados";
+            this.listaClientesConnectados.Size = new System.Drawing.Size(259, 298);
+            this.listaClientesConnectados.TabIndex = 43;
             // 
             // txtConsola
             // 
@@ -113,21 +140,36 @@
             this.txtConsola.Name = "txtConsola";
             this.txtConsola.ReadOnly = true;
             this.txtConsola.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConsola.Size = new System.Drawing.Size(672, 624);
+            this.txtConsola.Size = new System.Drawing.Size(672, 318);
             this.txtConsola.TabIndex = 41;
             this.txtConsola.WordWrap = false;
+            this.txtConsola.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtConsola_MouseClick);
+            // 
+            // btEnviarMensagem
+            // 
+            this.btEnviarMensagem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btEnviarMensagem.Image = global::Client1.Properties.Resources.icons8_enviado_24;
+            this.btEnviarMensagem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btEnviarMensagem.Location = new System.Drawing.Point(584, 349);
+            this.btEnviarMensagem.Margin = new System.Windows.Forms.Padding(2);
+            this.btEnviarMensagem.Name = "btEnviarMensagem";
+            this.btEnviarMensagem.Padding = new System.Windows.Forms.Padding(3);
+            this.btEnviarMensagem.Size = new System.Drawing.Size(93, 40);
+            this.btEnviarMensagem.TabIndex = 38;
+            this.btEnviarMensagem.Text = "      Enviar";
+            this.btEnviarMensagem.UseVisualStyleBackColor = true;
+            this.btEnviarMensagem.Click += new System.EventHandler(this.btEnviarMensagem_Click_1);
             // 
             // txtMensagem
             // 
             this.txtMensagem.AccessibleDescription = "Escrever aqui!";
             this.txtMensagem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMensagem.Location = new System.Drawing.Point(5, 638);
+            this.txtMensagem.Location = new System.Drawing.Point(5, 352);
             this.txtMensagem.Margin = new System.Windows.Forms.Padding(2);
             this.txtMensagem.Multiline = true;
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(575, 37);
             this.txtMensagem.TabIndex = 34;
-            this.txtMensagem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMensagem_KeyDown_1);
             // 
             // Definicoes
             // 
@@ -139,7 +181,7 @@
             this.Definicoes.Location = new System.Drawing.Point(4, 22);
             this.Definicoes.Name = "Definicoes";
             this.Definicoes.Padding = new System.Windows.Forms.Padding(3);
-            this.Definicoes.Size = new System.Drawing.Size(1131, 701);
+            this.Definicoes.Size = new System.Drawing.Size(961, 404);
             this.Definicoes.TabIndex = 1;
             this.Definicoes.Text = "Definições";
             this.Definicoes.UseVisualStyleBackColor = true;
@@ -199,10 +241,10 @@
             this.tabControl2.Controls.Add(this.Menus);
             this.tabControl2.Controls.Add(this.paginaLogin);
             this.tabControl2.Controls.Add(this.paginaRegisto);
-            this.tabControl2.Location = new System.Drawing.Point(2, 3);
+            this.tabControl2.Location = new System.Drawing.Point(2, -21);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1348, 729);
+            this.tabControl2.Size = new System.Drawing.Size(1174, 461);
             this.tabControl2.TabIndex = 34;
             // 
             // Menus
@@ -212,7 +254,7 @@
             this.Menus.Location = new System.Drawing.Point(4, 22);
             this.Menus.Name = "Menus";
             this.Menus.Padding = new System.Windows.Forms.Padding(3);
-            this.Menus.Size = new System.Drawing.Size(1340, 703);
+            this.Menus.Size = new System.Drawing.Size(1166, 435);
             this.Menus.TabIndex = 0;
             this.Menus.Text = "Menu";
             this.Menus.UseVisualStyleBackColor = true;
@@ -225,28 +267,88 @@
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel8);
-            this.panel5.Location = new System.Drawing.Point(0, 3);
+            this.panel5.Location = new System.Drawing.Point(-4, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(205, 699);
+            this.panel5.Size = new System.Drawing.Size(209, 426);
             this.panel5.TabIndex = 34;
+            // 
+            // nomeUser
+            // 
+            this.nomeUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.nomeUser.Image = global::Client1.Properties.Resources.icons8_usuário_homem_com_círculo_24__1_;
+            this.nomeUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.nomeUser.Location = new System.Drawing.Point(10, 394);
+            this.nomeUser.Name = "nomeUser";
+            this.nomeUser.Size = new System.Drawing.Size(189, 21);
+            this.nomeUser.TabIndex = 43;
+            this.nomeUser.Text = "Nome";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(17, 13);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(161, 45);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Safe Chat";
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.panel6.Controls.Add(this.btTerminarSessao);
-            this.panel6.Location = new System.Drawing.Point(10, 580);
+            this.panel6.Location = new System.Drawing.Point(7, 270);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(189, 52);
             this.panel6.TabIndex = 2;
+            // 
+            // btTerminarSessao
+            // 
+            this.btTerminarSessao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btTerminarSessao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btTerminarSessao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btTerminarSessao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTerminarSessao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btTerminarSessao.Image = global::Client1.Properties.Resources.icons8_exportar_24__1_;
+            this.btTerminarSessao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTerminarSessao.Location = new System.Drawing.Point(-3, 3);
+            this.btTerminarSessao.Margin = new System.Windows.Forms.Padding(0);
+            this.btTerminarSessao.Name = "btTerminarSessao";
+            this.btTerminarSessao.Size = new System.Drawing.Size(192, 47);
+            this.btTerminarSessao.TabIndex = 0;
+            this.btTerminarSessao.Text = "Sair";
+            this.btTerminarSessao.UseVisualStyleBackColor = false;
+            this.btTerminarSessao.Click += new System.EventHandler(this.btTerminarSessao_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.panel7.Controls.Add(this.btIDefinicoesIni);
-            this.panel7.Location = new System.Drawing.Point(10, 521);
+            this.panel7.Location = new System.Drawing.Point(7, 211);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(189, 53);
             this.panel7.TabIndex = 1;
+            // 
+            // btIDefinicoesIni
+            // 
+            this.btIDefinicoesIni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btIDefinicoesIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btIDefinicoesIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btIDefinicoesIni.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btIDefinicoesIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btIDefinicoesIni.Image = global::Client1.Properties.Resources.icons8_configurações_24__1_;
+            this.btIDefinicoesIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btIDefinicoesIni.Location = new System.Drawing.Point(-3, 3);
+            this.btIDefinicoesIni.Margin = new System.Windows.Forms.Padding(0);
+            this.btIDefinicoesIni.Name = "btIDefinicoesIni";
+            this.btIDefinicoesIni.Size = new System.Drawing.Size(192, 47);
+            this.btIDefinicoesIni.TabIndex = 0;
+            this.btIDefinicoesIni.Text = "Definições";
+            this.btIDefinicoesIni.UseVisualStyleBackColor = false;
+            this.btIDefinicoesIni.Click += new System.EventHandler(this.btIDefinicoesIni_Click_1);
             // 
             // panel8
             // 
@@ -258,6 +360,25 @@
             this.panel8.Size = new System.Drawing.Size(189, 53);
             this.panel8.TabIndex = 0;
             // 
+            // btInicioIni
+            // 
+            this.btInicioIni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btInicioIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btInicioIni.FlatAppearance.BorderSize = 0;
+            this.btInicioIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInicioIni.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInicioIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btInicioIni.Image = global::Client1.Properties.Resources.icons8_página_inicial_24__1_;
+            this.btInicioIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btInicioIni.Location = new System.Drawing.Point(-3, 3);
+            this.btInicioIni.Margin = new System.Windows.Forms.Padding(0);
+            this.btInicioIni.Name = "btInicioIni";
+            this.btInicioIni.Size = new System.Drawing.Size(192, 47);
+            this.btInicioIni.TabIndex = 0;
+            this.btInicioIni.Text = "Início";
+            this.btInicioIni.UseVisualStyleBackColor = false;
+            this.btInicioIni.Click += new System.EventHandler(this.btInicioIni_Click);
+            // 
             // paginaLogin
             // 
             this.paginaLogin.BackColor = System.Drawing.Color.Gainsboro;
@@ -266,7 +387,7 @@
             this.paginaLogin.Location = new System.Drawing.Point(4, 22);
             this.paginaLogin.Name = "paginaLogin";
             this.paginaLogin.Padding = new System.Windows.Forms.Padding(3);
-            this.paginaLogin.Size = new System.Drawing.Size(1340, 703);
+            this.paginaLogin.Size = new System.Drawing.Size(1166, 435);
             this.paginaLogin.TabIndex = 1;
             this.paginaLogin.Text = "Login";
             // 
@@ -274,12 +395,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(651, 166);
+            this.label7.Location = new System.Drawing.Point(547, 75);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 32);
             this.label7.TabIndex = 5;
             this.label7.Text = "Login";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel1
             // 
@@ -291,7 +411,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txtNomeLogin);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(548, 216);
+            this.panel1.Location = new System.Drawing.Point(447, 125);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(279, 169);
             this.panel1.TabIndex = 4;
@@ -329,6 +449,7 @@
             this.txtPasswordLogin.Name = "txtPasswordLogin";
             this.txtPasswordLogin.Size = new System.Drawing.Size(129, 25);
             this.txtPasswordLogin.TabIndex = 1;
+            this.txtPasswordLogin.Text = "123";
             // 
             // label5
             // 
@@ -347,6 +468,7 @@
             this.txtNomeLogin.Name = "txtNomeLogin";
             this.txtNomeLogin.Size = new System.Drawing.Size(129, 25);
             this.txtNomeLogin.TabIndex = 0;
+            this.txtNomeLogin.Text = "admin";
             // 
             // label6
             // 
@@ -365,7 +487,7 @@
             this.paginaRegisto.Controls.Add(this.panel2);
             this.paginaRegisto.Location = new System.Drawing.Point(4, 22);
             this.paginaRegisto.Name = "paginaRegisto";
-            this.paginaRegisto.Size = new System.Drawing.Size(1340, 703);
+            this.paginaRegisto.Size = new System.Drawing.Size(1166, 435);
             this.paginaRegisto.TabIndex = 2;
             this.paginaRegisto.Text = "Registo";
             // 
@@ -373,7 +495,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(651, 170);
+            this.label8.Location = new System.Drawing.Point(547, 75);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 32);
             this.label8.TabIndex = 7;
@@ -389,7 +511,7 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtNomeRegisto);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(548, 216);
+            this.panel2.Location = new System.Drawing.Point(447, 125);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(279, 169);
             this.panel2.TabIndex = 6;
@@ -456,115 +578,31 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Password:";
             // 
-            // label11
+            // button1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(17, 13);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 45);
-            this.label11.TabIndex = 42;
-            this.label11.Text = "Safe Chat";
-            // 
-            // nomeUser
-            // 
-            this.nomeUser.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.nomeUser.Image = global::Client1.Properties.Resources.icons8_usuário_homem_com_círculo_24__1_;
-            this.nomeUser.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.nomeUser.Location = new System.Drawing.Point(10, 660);
-            this.nomeUser.Name = "nomeUser";
-            this.nomeUser.Size = new System.Drawing.Size(189, 21);
-            this.nomeUser.TabIndex = 43;
-            this.nomeUser.Text = "Nome";
-            // 
-            // btTerminarSessao
-            // 
-            this.btTerminarSessao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btTerminarSessao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btTerminarSessao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTerminarSessao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTerminarSessao.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btTerminarSessao.Image = global::Client1.Properties.Resources.icons8_exportar_24__1_;
-            this.btTerminarSessao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTerminarSessao.Location = new System.Drawing.Point(-3, 3);
-            this.btTerminarSessao.Margin = new System.Windows.Forms.Padding(0);
-            this.btTerminarSessao.Name = "btTerminarSessao";
-            this.btTerminarSessao.Size = new System.Drawing.Size(192, 47);
-            this.btTerminarSessao.TabIndex = 0;
-            this.btTerminarSessao.Text = "Sair";
-            this.btTerminarSessao.UseVisualStyleBackColor = false;
-            this.btTerminarSessao.Click += new System.EventHandler(this.btTerminarSessao_Click);
-            // 
-            // btIDefinicoesIni
-            // 
-            this.btIDefinicoesIni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btIDefinicoesIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btIDefinicoesIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btIDefinicoesIni.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btIDefinicoesIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btIDefinicoesIni.Image = global::Client1.Properties.Resources.icons8_configurações_24__1_;
-            this.btIDefinicoesIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btIDefinicoesIni.Location = new System.Drawing.Point(-3, 3);
-            this.btIDefinicoesIni.Margin = new System.Windows.Forms.Padding(0);
-            this.btIDefinicoesIni.Name = "btIDefinicoesIni";
-            this.btIDefinicoesIni.Size = new System.Drawing.Size(192, 47);
-            this.btIDefinicoesIni.TabIndex = 0;
-            this.btIDefinicoesIni.Text = "Definições";
-            this.btIDefinicoesIni.UseVisualStyleBackColor = false;
-            this.btIDefinicoesIni.Click += new System.EventHandler(this.btIDefinicoesIni_Click_1);
-            // 
-            // btInicioIni
-            // 
-            this.btInicioIni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btInicioIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btInicioIni.FlatAppearance.BorderSize = 0;
-            this.btInicioIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btInicioIni.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInicioIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btInicioIni.Image = global::Client1.Properties.Resources.icons8_página_inicial_24__1_;
-            this.btInicioIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btInicioIni.Location = new System.Drawing.Point(-3, 3);
-            this.btInicioIni.Margin = new System.Windows.Forms.Padding(0);
-            this.btInicioIni.Name = "btInicioIni";
-            this.btInicioIni.Size = new System.Drawing.Size(192, 47);
-            this.btInicioIni.TabIndex = 0;
-            this.btInicioIni.Text = "Início";
-            this.btInicioIni.UseVisualStyleBackColor = false;
-            this.btInicioIni.Click += new System.EventHandler(this.btInicioIni_Click);
-            // 
-            // btEnviarMensagem
-            // 
-            this.btEnviarMensagem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.btEnviarMensagem.Image = global::Client1.Properties.Resources.icons8_enviado_24;
-            this.btEnviarMensagem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btEnviarMensagem.Location = new System.Drawing.Point(584, 635);
-            this.btEnviarMensagem.Margin = new System.Windows.Forms.Padding(2);
-            this.btEnviarMensagem.Name = "btEnviarMensagem";
-            this.btEnviarMensagem.Padding = new System.Windows.Forms.Padding(3);
-            this.btEnviarMensagem.Size = new System.Drawing.Size(93, 40);
-            this.btEnviarMensagem.TabIndex = 38;
-            this.btEnviarMensagem.Text = "      Enviar";
-            this.btEnviarMensagem.UseVisualStyleBackColor = true;
-            this.btEnviarMensagem.Click += new System.EventHandler(this.btEnviarMensagem_Click_1);
+            this.button1.Location = new System.Drawing.Point(733, 365);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Cliente1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1176, 428);
             this.Controls.Add(this.tabControl2);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1366, 768);
-            this.MinimumSize = new System.Drawing.Size(1366, 768);
             this.Name = "Cliente1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente 1";
-            this.Load += new System.EventHandler(this.Cliente1_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cliente1_FormClosed);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Cliente1_MouseMove);
             this.tabControl1.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
             this.Inicio.PerformLayout();
@@ -631,6 +669,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label nomeUser;
+        private System.Windows.Forms.ListBox listaClientesConnectados;
+        private System.Windows.Forms.Button btConversar;
+        private System.Windows.Forms.Button button1;
     }
 }
 

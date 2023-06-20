@@ -4,15 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Servidor {
     internal class Auth {
 
         
         public int Id { get; set; }
+
+        [StringLength(30)]
+        [Index(IsUnique = true)]
         public string Username { get; set; }
-        public string Password { get; set; }
-      //  public bool isOnline { get; set; }
+        
+        public byte[] Password { get; set; }
+       
+        public byte[] Salt { get; set; }
+        public bool IsOnline { get; set; }
+        
+        public DateTime LastAuthentication {get; set; }
+        public DateTime AccoutCreation { get; set; }
+        
         public Auth() {
 
         }

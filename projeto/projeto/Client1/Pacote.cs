@@ -12,5 +12,9 @@ namespace Client1 {
         public const int MESSAGE = 103;
         public const int PUBLIC_KEY = 104;
         public const int AES_ENCRYPTED_KEY = 105;
+        public const int BROADCAST = 106;
+        public const int NOTIFICATION = 107;
+        public const int INFORM_COMUNICATION = 108;
+        public const int COMMUNICATION_AES_ENCRYPTED_KEY = 109;
     }
 }

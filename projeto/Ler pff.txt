@@ -1,0 +1,1 @@
+No projeto ainda falta validações, comentários, falta acabar a logica da comunicação dos clientes e logs.

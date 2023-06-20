@@ -42,9 +42,21 @@ namespace Testes {
                 byte[] dados = receivedPacket.GetDataAs<byte[]>();
 
                 packet2.SetPayload(dados);
+                SendBroadcast(Packet.Serialize(packet2));
 
-                Send(Packet.Serialize(packet2), userID);
             } else if (receivedPacket._GetType() == (int)Packet.Type.PUBLIC_KEY) {
+                this.publicKey = receivedPacket.GetDataAs<byte[]>();
+                //Console.WriteLine("Public key has been sent");
+                AES aes = new AES();
+                aes.GenerateKey();
+                this.aesKey = aes._key;
+                byte[] encrypedKey = RSA.Encrypt(aesKey, publicKey);
+
+                //1000 pacote com a key ecryptada
+                Packet ecryptedKeyPacket = new Packet(1000);
+                ecryptedKeyPacket.SetPayload(encrypedKey);
+                Send(Packet.Serialize(ecryptedKeyPacket), userID);
+            } else if (receivedPacket._GetType() == (int)Packet.Type.BYTES) {
                 this.publicKey = receivedPacket.GetDataAs<byte[]>();
                 //Console.WriteLine("Public key has been sent");
                 AES aes = new AES();
@@ -133,7 +145,7 @@ namespace Testes {
             Packet messagePacket = new Packet(1001);
             messagePacket.SetPayload(mensagemEncriptada);
             client.Send(Packet.Serialize(messagePacket));
-            client.Send(Packet.Serialize(messagePacket));
+            //client.Send(Packet.Serialize(messagePacket));
             client.Receive(true);
 
             //Console.WriteLine("Mensagem decriptada: ");
