@@ -23,20 +23,16 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Inicio = new System.Windows.Forms.TabPage();
+            this.btAtualizar = new System.Windows.Forms.Button();
             this.btConversar = new System.Windows.Forms.Button();
             this.listaClientesConnectados = new System.Windows.Forms.ListBox();
             this.txtConsola = new System.Windows.Forms.TextBox();
             this.btEnviarMensagem = new System.Windows.Forms.Button();
             this.txtMensagem = new System.Windows.Forms.TextBox();
-            this.Definicoes = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtIP = new System.Windows.Forms.TextBox();
-            this.txtPorto = new System.Windows.Forms.TextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Menus = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -44,8 +40,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btTerminarSessao = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btIDefinicoesIni = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btInicioIni = new System.Windows.Forms.Button();
             this.paginaLogin = new System.Windows.Forms.TabPage();
@@ -66,15 +60,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtNomeRegisto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.Inicio.SuspendLayout();
-            this.Definicoes.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.Menus.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.paginaLogin.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -85,7 +77,6 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.Inicio);
-            this.tabControl1.Controls.Add(this.Definicoes);
             this.tabControl1.Location = new System.Drawing.Point(201, -22);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -94,7 +85,7 @@
             // 
             // Inicio
             // 
-            this.Inicio.Controls.Add(this.button1);
+            this.Inicio.Controls.Add(this.btAtualizar);
             this.Inicio.Controls.Add(this.btConversar);
             this.Inicio.Controls.Add(this.listaClientesConnectados);
             this.Inicio.Controls.Add(this.txtConsola);
@@ -107,6 +98,17 @@
             this.Inicio.TabIndex = 0;
             this.Inicio.Text = "Inicio";
             this.Inicio.UseVisualStyleBackColor = true;
+            // 
+            // btAtualizar
+            // 
+            this.btAtualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAtualizar.Location = new System.Drawing.Point(695, 11);
+            this.btAtualizar.Name = "btAtualizar";
+            this.btAtualizar.Size = new System.Drawing.Size(232, 34);
+            this.btAtualizar.TabIndex = 46;
+            this.btAtualizar.Text = "Atualizar";
+            this.btAtualizar.UseVisualStyleBackColor = true;
+            this.btAtualizar.Click += new System.EventHandler(this.btAtualizar_Click);
             // 
             // btConversar
             // 
@@ -124,9 +126,9 @@
             this.listaClientesConnectados.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listaClientesConnectados.FormattingEnabled = true;
             this.listaClientesConnectados.ItemHeight = 21;
-            this.listaClientesConnectados.Location = new System.Drawing.Point(682, 16);
+            this.listaClientesConnectados.Location = new System.Drawing.Point(682, 58);
             this.listaClientesConnectados.Name = "listaClientesConnectados";
-            this.listaClientesConnectados.Size = new System.Drawing.Size(259, 298);
+            this.listaClientesConnectados.Size = new System.Drawing.Size(259, 256);
             this.listaClientesConnectados.TabIndex = 43;
             // 
             // txtConsola
@@ -143,7 +145,6 @@
             this.txtConsola.Size = new System.Drawing.Size(672, 318);
             this.txtConsola.TabIndex = 41;
             this.txtConsola.WordWrap = false;
-            this.txtConsola.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtConsola_MouseClick);
             // 
             // btEnviarMensagem
             // 
@@ -170,71 +171,6 @@
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(575, 37);
             this.txtMensagem.TabIndex = 34;
-            // 
-            // Definicoes
-            // 
-            this.Definicoes.Controls.Add(this.label2);
-            this.Definicoes.Controls.Add(this.label4);
-            this.Definicoes.Controls.Add(this.label3);
-            this.Definicoes.Controls.Add(this.txtIP);
-            this.Definicoes.Controls.Add(this.txtPorto);
-            this.Definicoes.Location = new System.Drawing.Point(4, 22);
-            this.Definicoes.Name = "Definicoes";
-            this.Definicoes.Padding = new System.Windows.Forms.Padding(3);
-            this.Definicoes.Size = new System.Drawing.Size(961, 404);
-            this.Definicoes.TabIndex = 1;
-            this.Definicoes.Text = "Definições";
-            this.Definicoes.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(6, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 30);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "Definições";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 129);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "Porto:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 86);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 17);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "IP:";
-            // 
-            // txtIP
-            // 
-            this.txtIP.Location = new System.Drawing.Point(54, 83);
-            this.txtIP.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(115, 22);
-            this.txtIP.TabIndex = 42;
-            this.txtIP.Text = "127.0.0.1";
-            // 
-            // txtPorto
-            // 
-            this.txtPorto.Location = new System.Drawing.Point(54, 129);
-            this.txtPorto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPorto.Name = "txtPorto";
-            this.txtPorto.Size = new System.Drawing.Size(115, 22);
-            this.txtPorto.TabIndex = 41;
-            this.txtPorto.Text = "10000";
             // 
             // tabControl2
             // 
@@ -265,7 +201,6 @@
             this.panel5.Controls.Add(this.nomeUser);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Location = new System.Drawing.Point(-4, 3);
             this.panel5.Name = "panel5";
@@ -322,33 +257,6 @@
             this.btTerminarSessao.Text = "Sair";
             this.btTerminarSessao.UseVisualStyleBackColor = false;
             this.btTerminarSessao.Click += new System.EventHandler(this.btTerminarSessao_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.panel7.Controls.Add(this.btIDefinicoesIni);
-            this.panel7.Location = new System.Drawing.Point(7, 211);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(189, 53);
-            this.panel7.TabIndex = 1;
-            // 
-            // btIDefinicoesIni
-            // 
-            this.btIDefinicoesIni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btIDefinicoesIni.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btIDefinicoesIni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btIDefinicoesIni.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btIDefinicoesIni.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btIDefinicoesIni.Image = global::Client1.Properties.Resources.icons8_configurações_24__1_;
-            this.btIDefinicoesIni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btIDefinicoesIni.Location = new System.Drawing.Point(-3, 3);
-            this.btIDefinicoesIni.Margin = new System.Windows.Forms.Padding(0);
-            this.btIDefinicoesIni.Name = "btIDefinicoesIni";
-            this.btIDefinicoesIni.Size = new System.Drawing.Size(192, 47);
-            this.btIDefinicoesIni.TabIndex = 0;
-            this.btIDefinicoesIni.Text = "Definições";
-            this.btIDefinicoesIni.UseVisualStyleBackColor = false;
-            this.btIDefinicoesIni.Click += new System.EventHandler(this.btIDefinicoesIni_Click_1);
             // 
             // panel8
             // 
@@ -578,15 +486,9 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Password:";
             // 
-            // button1
+            // timer1
             // 
-            this.button1.Location = new System.Drawing.Point(733, 365);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Cliente1
             // 
@@ -602,18 +504,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente 1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cliente1_FormClosed);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Cliente1_MouseMove);
             this.tabControl1.ResumeLayout(false);
             this.Inicio.ResumeLayout(false);
             this.Inicio.PerformLayout();
-            this.Definicoes.ResumeLayout(false);
-            this.Definicoes.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.Menus.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.paginaLogin.ResumeLayout(false);
             this.paginaLogin.PerformLayout();
@@ -634,19 +532,11 @@
         private System.Windows.Forms.TextBox txtConsola;
         private System.Windows.Forms.Button btEnviarMensagem;
         private System.Windows.Forms.TextBox txtMensagem;
-        private System.Windows.Forms.TabPage Definicoes;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtIP;
-        private System.Windows.Forms.TextBox txtPorto;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage Menus;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btTerminarSessao;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button btIDefinicoesIni;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btInicioIni;
         private System.Windows.Forms.TabPage paginaLogin;
@@ -671,7 +561,8 @@
         private System.Windows.Forms.Label nomeUser;
         private System.Windows.Forms.ListBox listaClientesConnectados;
         private System.Windows.Forms.Button btConversar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btAtualizar;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -69,7 +69,6 @@
     <Compile Include="Pacote.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Valida.cs" />
     <EmbeddedResource Include="Client1.resx">
       <DependentUpon>Client1.cs</DependentUpon>
     </EmbeddedResource>

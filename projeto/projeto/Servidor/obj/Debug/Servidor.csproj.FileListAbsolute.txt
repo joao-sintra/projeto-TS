@@ -21,5 +21,3 @@ C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servido
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.xml
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\obj\Debug\Servidor.csproj.GenerateResource.cache
-C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\obj\Debug\Servidor.Migrations._2.resources

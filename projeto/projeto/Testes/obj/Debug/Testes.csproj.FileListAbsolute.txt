@@ -8,3 +8,7 @@ C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.csproj.CopyComplete
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.exe
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\obj\Debug\Testes.pdb
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\EntityFramework.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\EntityFramework.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Testes\bin\Debug\EntityFramework.SqlServer.xml

@@ -20,7 +20,7 @@ namespace Servidor {
         public byte[] Password { get; set; }
        
         public byte[] Salt { get; set; }
-        public bool IsOnline { get; set; }
+      
         
         public DateTime LastAuthentication {get; set; }
         public DateTime AccoutCreation { get; set; }

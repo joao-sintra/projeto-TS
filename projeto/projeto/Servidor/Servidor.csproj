@@ -59,10 +59,6 @@
   <ItemGroup>
     <Compile Include="Auth.cs" />
     <Compile Include="AuthContext.cs" />
-    <Compile Include="Migrations\202305291444291_2.cs" />
-    <Compile Include="Migrations\202305291444291_2.designer.cs">
-      <DependentUpon>202305291444291_2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Pacote.cs" />
     <Compile Include="Program.cs" />
@@ -73,11 +69,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202305291444291_2.resx">
-      <DependentUpon>202305291444291_2.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

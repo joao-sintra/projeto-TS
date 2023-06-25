@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ProtoIP;
 using System.Threading;
+using System.Data.Entity;
 
 namespace Servidor {
 
@@ -15,27 +16,32 @@ namespace Servidor {
         const int PORT = 1234;
         static void Main() {
 
-            // using (var db = new AuthContext()) {
-            //var user = new Auth {Id = 1, Username = "admin", Password = "123" };
-            //db.Auths.Add(user);
-            //db.SaveChanges();
-            //}
+            //check database exists
+            using (var dbContext = new AuthContext()) {
+                bool isDatabaseExists = dbContext.Database.Exists();
+
+                if (!isDatabaseExists) {
+                    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<AuthContext>());
+                    AuthContext db = new AuthContext();
+                    db.Database.Initialize(true);
+                } 
+            }
+
+
+
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<AuthContext>());
+            //AuthContext db = new AuthContext();
+            //db.Database.Initialize(true);
+
 
             Console.WriteLine("Starting server...");
             Server server = new Server();
             Thread serverThread = new Thread(() => server.Start(PORT));
             serverThread.Start();
-            Console.WriteLine("Server started on port: "+PORT);
-            // byte[] data = Encoding.UTF8.GetBytes("boas a todos");
-            // server.SendBroadcast(data);
-
-
-            //Broadcast Connections
-
-
+            Console.WriteLine("Server started on port: " + PORT);
         }
     }
- }
+}
 
 
 

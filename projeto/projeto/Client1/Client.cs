@@ -12,8 +12,9 @@ using ProtoIP;
 // Tanto o NotificationHandler como o NotificationPusher foram desenvolvidos com a ajuda do João Matos
 
 namespace Client1 {
+
     class Client : ProtoClient {
-        public byte[] dados;
+
         public byte[] mensagem;
         public byte[] ecryptedAesKey;
         public byte[] registo;
@@ -24,7 +25,11 @@ namespace Client1 {
         public byte[] otherClientPublicKey;
         public byte[] encryptedCommunicationAESKey;
 
+      
+
         public NotificationHandler _notificationHandler = new NotificationHandler();
+
+        Cliente1 form;
         public override void OnReceive() {
 
             Packet receivedPacket = AssembleReceivedDataIntoPacket();
@@ -33,20 +38,23 @@ namespace Client1 {
             if (receivedPacket._GetType() == Pacote.AES_ENCRYPTED_KEY) {
                 this.ecryptedAesKey = receivedPacket.GetDataAs<byte[]>();
             } else if (receivedPacket._GetType() == Pacote.MESSAGE) {
-                this.dados = receivedPacket.GetDataAs<byte[]>();
+              
             }else if(receivedPacket._GetType() == Pacote.REGISTER) {
                 this.registo = receivedPacket.GetDataAs<byte[]>();
             } else if (receivedPacket._GetType() == Pacote.LOGIN) {
                 this.login = receivedPacket.GetDataAs<byte[]>();
             }else if (receivedPacket._GetType() == Pacote.INFORM_COMUNICATION) {
                 this.otherClientPublicKey = receivedPacket.GetDataAs<byte[]>();
-            } /*else if (receivedPacket._GetType() == Pacote.ENCRYPTED_PUBLIC_KEY) {
+                this.informComunication = receivedPacket.GetDataAs<byte[]>();
+            } 
+
+            /*else if (receivedPacket._GetType() == Pacote.ENCRYPTED_PUBLIC_KEY) {
                 //this.encryptedPublicKey = receivedPacket.GetDataAs<byte[]>();
                 Debug.WriteLine("CLIENT: Received encrypted public Key!");
             }*/
         }
         // The logic to handle the notifications received from the server
-        public void OnNotificationReceive(byte[] data) {
+        public void OnNotificationReceive(byte[] data ) {
             Packet receivedPacket = Packet.Deserialize(data);
             if (receivedPacket._GetType() == Pacote.NOTIFICATION) {
                 this.notification = receivedPacket.GetDataAs<byte[]>();
@@ -58,10 +66,16 @@ namespace Client1 {
                 this.encryptedCommunicationAESKey = receivedPacket.GetDataAs<byte[]>();
                 Debug.WriteLine("CLIENT: Received encrypted AES Key!");
             } else if (receivedPacket._GetType() == Pacote.MESSAGE) {
+                
                 this.mensagem = receivedPacket.GetDataAs<byte[]>();
                 Debug.WriteLine("CLIENT: Received Mensagem!");
             }
+
         }
+
+        
+
+      
     }
 
 }
