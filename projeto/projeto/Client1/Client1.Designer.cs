@@ -171,6 +171,7 @@
             this.txtMensagem.Name = "txtMensagem";
             this.txtMensagem.Size = new System.Drawing.Size(575, 37);
             this.txtMensagem.TabIndex = 34;
+            this.txtMensagem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMensagem_KeyDown);
             // 
             // tabControl2
             // 
@@ -357,7 +358,7 @@
             this.txtPasswordLogin.Name = "txtPasswordLogin";
             this.txtPasswordLogin.Size = new System.Drawing.Size(129, 25);
             this.txtPasswordLogin.TabIndex = 1;
-            this.txtPasswordLogin.Text = "123";
+            this.txtPasswordLogin.UseSystemPasswordChar = true;
             // 
             // label5
             // 
@@ -376,7 +377,6 @@
             this.txtNomeLogin.Name = "txtNomeLogin";
             this.txtNomeLogin.Size = new System.Drawing.Size(129, 25);
             this.txtNomeLogin.TabIndex = 0;
-            this.txtNomeLogin.Text = "admin";
             // 
             // label6
             // 
@@ -457,6 +457,7 @@
             this.txtPasswordRegisto.Name = "txtPasswordRegisto";
             this.txtPasswordRegisto.Size = new System.Drawing.Size(129, 25);
             this.txtPasswordRegisto.TabIndex = 1;
+            this.txtPasswordRegisto.UseSystemPasswordChar = true;
             // 
             // label9
             // 

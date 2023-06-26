@@ -21,7 +21,20 @@ using ProtoIP.Crypto;
 using System.Xml.Linq;
 
 // Tanto o NotificationHandler como o NotificationPusher foram desenvolvidos com a ajuda do João Matos
-
+//Passos para a comunição segura
+/*
+*1. O cliente A conecta-se ao servidor e autentica-se (aquilo que ja fizeste)
+*2. O cliente B faz o mesmo.
+*3. O cliente A informa o servidor de que quer comunicar com o cliente B
+*4. O servidor devolve a chave publica do cliente B e envia-a para o cliente A
+*5. O cliente A recebe a chave publica do B.
+*6. O cliente A gera uma nova chave AES para a comunicacao cliente A - cliente B
+*7. O cliente A encripta a chave AES com a chave publica do cliente B
+*8. O cliente A envia a chave AES encriptada para o servidor
+*9. O servidor envia a chave AES encriptada para o cliente B
+*10. O cliente B usa a sua chave privada para desencriptar a chave AES
+*11. O cliente A e o cliente B trocaram de chaves e podem comunicar de forma segura atraves de uma chave AES partilhada 
+ */
 
 namespace Client1 {
     public partial class Cliente1 : Form {
@@ -94,7 +107,7 @@ namespace Client1 {
             }
             if (!conversarCarregado) {
                 sharedAESKey = rsa.Decrypt(client.encryptedCommunicationAESKey);
-               
+
             }
 
             //Encriptar a mensagem com a chave partilhada
@@ -309,6 +322,14 @@ namespace Client1 {
 
             if (clientIsConnected) {
                 RecieveMessage();
+            }
+        }
+
+      
+
+        private void txtMensagem_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) { btEnviarMensagem.PerformClick(); 
+            txtMensagem.Text = "";
             }
         }
     }
