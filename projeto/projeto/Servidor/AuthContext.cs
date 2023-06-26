@@ -9,8 +9,6 @@ namespace Servidor {
     internal class AuthContext : DbContext {
         public DbSet<Auth> Auths { get; set; }
 
-        public AuthContext() : base("AuthContext") {
-            Database.SetInitializer<AuthContext>(new CreateDatabaseIfNotExists<AuthContext>());
-        }
+        
     }
 }

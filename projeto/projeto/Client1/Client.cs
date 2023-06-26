@@ -24,58 +24,79 @@ namespace Client1 {
         public bool clientConnected = false;
         public byte[] otherClientPublicKey;
         public byte[] encryptedCommunicationAESKey;
+        public byte[] communicationUsername;
+        public byte[] random;
 
-      
+
 
         public NotificationHandler _notificationHandler = new NotificationHandler();
 
-        Cliente1 form;
+        //Função chamada quando recebe um pacote do servidor (Função do ProtoIP)
         public override void OnReceive() {
 
             Packet receivedPacket = AssembleReceivedDataIntoPacket();
 
-            
-            if (receivedPacket._GetType() == Pacote.AES_ENCRYPTED_KEY) {
-                this.ecryptedAesKey = receivedPacket.GetDataAs<byte[]>();
-            } else if (receivedPacket._GetType() == Pacote.MESSAGE) {
-              
-            }else if(receivedPacket._GetType() == Pacote.REGISTER) {
-                this.registo = receivedPacket.GetDataAs<byte[]>();
-            } else if (receivedPacket._GetType() == Pacote.LOGIN) {
-                this.login = receivedPacket.GetDataAs<byte[]>();
-            }else if (receivedPacket._GetType() == Pacote.INFORM_COMUNICATION) {
-                this.otherClientPublicKey = receivedPacket.GetDataAs<byte[]>();
-                this.informComunication = receivedPacket.GetDataAs<byte[]>();
-            } 
+            switch (receivedPacket._GetType()) {
+                case Pacote.MESSAGE:
+                    this.random = receivedPacket.GetDataAs<byte[]>();
+                    break;
+                case Pacote.AES_ENCRYPTED_KEY:
+                    this.ecryptedAesKey = receivedPacket.GetDataAs<byte[]>();
+                    break;
+                case Pacote.REGISTER:
+                    this.registo = receivedPacket.GetDataAs<byte[]>();
+                    break;
+                case Pacote.LOGIN:
+                    this.login = receivedPacket.GetDataAs<byte[]>();
+                    break;
+                case Pacote.INFORM_COMUNICATION:
+                    this.otherClientPublicKey = receivedPacket.GetDataAs<byte[]>();
+                    this.informComunication = receivedPacket.GetDataAs<byte[]>();
+                    break;
 
-            /*else if (receivedPacket._GetType() == Pacote.ENCRYPTED_PUBLIC_KEY) {
-                //this.encryptedPublicKey = receivedPacket.GetDataAs<byte[]>();
-                Debug.WriteLine("CLIENT: Received encrypted public Key!");
-            }*/
-        }
-        // The logic to handle the notifications received from the server
-        public void OnNotificationReceive(byte[] data ) {
-            Packet receivedPacket = Packet.Deserialize(data);
-            if (receivedPacket._GetType() == Pacote.NOTIFICATION) {
-                this.notification = receivedPacket.GetDataAs<byte[]>();
-                Debug.WriteLine("CLIENT: Received notification!");
-            } else if (receivedPacket._GetType() == Pacote.INFORM_COMUNICATION) {
-                this.informComunication = receivedPacket.GetDataAs<byte[]>();
-                Debug.WriteLine("CLIENT: Received Comunication!");
-            }else if (receivedPacket._GetType() == Pacote.COMMUNICATION_AES_ENCRYPTED_KEY) {
-                this.encryptedCommunicationAESKey = receivedPacket.GetDataAs<byte[]>();
-                Debug.WriteLine("CLIENT: Received encrypted AES Key!");
-            } else if (receivedPacket._GetType() == Pacote.MESSAGE) {
-                
-                this.mensagem = receivedPacket.GetDataAs<byte[]>();
-                Debug.WriteLine("CLIENT: Received Mensagem!");
+                default:
+                    break;
             }
 
         }
+        // A lógica para lidar com as notificações recebidas do servidor
+        public void OnNotificationReceive(byte[] data) {
+            Packet receivedPacket = Packet.Deserialize(data);
 
-        
+            switch (receivedPacket._GetType()) {
+                case Pacote.NOTIFICATION:
+                    this.notification = receivedPacket.GetDataAs<byte[]>();
+                    Debug.WriteLine("CLIENT: Received notification!");
+                    break;
+                case Pacote.INFORM_COMUNICATION:
+                    this.informComunication = receivedPacket.GetDataAs<byte[]>();
+                    Debug.WriteLine("CLIENT: Received Comunication!");
+                    break;
+                case Pacote.COMMUNICATION_AES_ENCRYPTED_KEY:
+                    this.encryptedCommunicationAESKey = receivedPacket.GetDataAs<byte[]>();
+                    Debug.WriteLine("CLIENT: Received encrypted AES Key!");
+                    break;
+                case Pacote.MESSAGE:
+                    this.mensagem = receivedPacket.GetDataAs<byte[]>();
+                    Debug.WriteLine("CLIENT: Received Mensagem!");
+                    break;
+                case Pacote.INFORM_COMUNICATION_USERNAME:
+                    this.communicationUsername = receivedPacket.GetDataAs<byte[]>();
+                    Debug.WriteLine("CLIENT: Received Comunication Username!");
+                    break;
+                default:
+                    break;
 
-      
+            }
+
+
+           
+
+        }
+
+
+
+
     }
 
 }

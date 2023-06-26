@@ -16,5 +16,7 @@ namespace Client1 {
         public const int NOTIFICATION = 107;
         public const int INFORM_COMUNICATION = 108;
         public const int COMMUNICATION_AES_ENCRYPTED_KEY = 109;
+        public const int INFORM_COMUNICATION_USERNAME = 110;
+
     }
 }

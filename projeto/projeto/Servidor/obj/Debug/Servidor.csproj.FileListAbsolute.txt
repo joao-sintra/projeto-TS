@@ -21,3 +21,13 @@ C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servido
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.xml
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Buffers.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Memory.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Buffers.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Memory.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Servidor\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

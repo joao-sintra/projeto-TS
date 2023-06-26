@@ -1,0 +1,153 @@
+26/06/2023 05:14:17 - [INFO] - Cliente Conectado.
+26/06/2023 05:14:17 - [INFO] - Enviando chave AES encriptada para o cliente
+26/06/2023 05:14:20 - [ERROR] - Login falhado nome não existe.
+26/06/2023 05:14:27 - [INFO] - Enviando chave AES encriptada para o cliente
+26/06/2023 05:14:27 - [ERROR] - Login falhado nome não existe.
+26/06/2023 05:14:35 - [INFO] - Enviando chave AES encriptada para o cliente
+26/06/2023 05:14:35 - [INFO] - Registo Cliente admin com sucesso.
+26/06/2023 05:14:35 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 05:32:59 - [INFO] - Servidor Iniciado na porta:1234 .
+26/06/2023 05:33:00 - [INFO] - Cliente Conectado.
+26/06/2023 05:33:00 - [INFO] - Chave publica recebida.
+26/06/2023 05:33:00 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 05:33:00 - [INFO] - Pedido para Login recebido.
+26/06/2023 05:33:05 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 05:33:05 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 05:33:27 - [INFO] - Servidor Iniciado na porta:1234 .
+26/06/2023 05:33:28 - [INFO] - Cliente Conectado.
+26/06/2023 05:33:28 - [INFO] - Chave publica recebida.
+26/06/2023 05:33:28 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 05:33:28 - [INFO] - Pedido para Login recebido.
+26/06/2023 05:33:34 - [ERROR] - Login falhado nome não existe.
+26/06/2023 05:33:38 - [INFO] - Chave publica recebida.
+26/06/2023 05:33:38 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 05:33:38 - [INFO] - Pedido para Login recebido.
+26/06/2023 05:33:39 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 05:33:39 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 05:34:05 - [INFO] - Cliente Conectado.
+26/06/2023 05:34:05 - [INFO] - Chave publica recebida.
+26/06/2023 05:34:05 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 05:34:05 - [INFO] - Pedido para Login recebido.
+26/06/2023 05:34:05 - [ERROR] - Login falhado cliente já online.
+26/06/2023 05:34:15 - [INFO] - Chave publica recebida.
+26/06/2023 05:34:15 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 05:34:15 - [INFO] - Pedido para Registo recebido.
+26/06/2023 05:34:15 - [INFO] - Registo Cliente Joao com sucesso.
+26/06/2023 05:34:15 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:23:23 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 20:24:05 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 20:24:06 - [INFO] - Cliente Conectado.
+26/06/2023 20:24:06 - [INFO] - Chave publica recebida.
+26/06/2023 20:24:06 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 20:24:06 - [INFO] - Pedido para Login recebido.
+26/06/2023 20:24:13 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 20:24:13 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:24:27 - [INFO] - Cliente Conectado.
+26/06/2023 20:24:28 - [INFO] - Chave publica recebida.
+26/06/2023 20:24:28 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 20:24:28 - [INFO] - Pedido para Login recebido.
+26/06/2023 20:24:28 - [INFO] - Login Cliente Joao com sucesso.
+26/06/2023 20:24:28 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:24:33 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+26/06/2023 20:24:33 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+26/06/2023 20:24:33 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+26/06/2023 20:32:03 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 20:32:07 - [INFO] - Cliente Conectado.
+26/06/2023 20:32:07 - [INFO] - Chave publica recebida.
+26/06/2023 20:32:07 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 20:32:07 - [INFO] - Pedido para Login recebido.
+26/06/2023 20:32:10 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 20:32:10 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:32:17 - [INFO] - Cliente Conectado.
+26/06/2023 20:32:17 - [INFO] - Chave publica recebida.
+26/06/2023 20:32:17 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 20:32:17 - [INFO] - Pedido para Login recebido.
+26/06/2023 20:32:17 - [INFO] - Login Cliente Joao com sucesso.
+26/06/2023 20:32:17 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:32:22 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+26/06/2023 20:32:22 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+26/06/2023 20:32:22 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+26/06/2023 20:41:16 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 20:41:17 - [INFO] - Cliente Conectado.
+26/06/2023 20:41:17 - [INFO] - Chave publica recebida.
+26/06/2023 20:41:17 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 20:41:17 - [INFO] - Pedido para Login recebido.
+26/06/2023 20:41:22 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 20:41:22 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:41:30 - [INFO] - Cliente Conectado.
+26/06/2023 20:41:30 - [INFO] - Chave publica recebida.
+26/06/2023 20:41:30 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 20:41:30 - [INFO] - Pedido para Login recebido.
+26/06/2023 20:41:30 - [INFO] - Login Cliente Joao com sucesso.
+26/06/2023 20:41:30 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 20:41:34 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+26/06/2023 20:41:34 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+26/06/2023 20:41:34 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+26/06/2023 20:41:37 - [ERROR] - Mensagem não enviada para o cliente assinatura inválida.
+26/06/2023 20:41:44 - [ERROR] - Mensagem não enviada para o cliente assinatura inválida.
+26/06/2023 21:32:52 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 21:33:09 - [INFO] - Cliente Conectado.
+26/06/2023 21:33:09 - [INFO] - Chave publica recebida.
+26/06/2023 21:33:09 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 21:33:09 - [INFO] - Pedido para Registo recebido.
+26/06/2023 21:33:10 - [INFO] - Registo Cliente joao com sucesso.
+26/06/2023 21:33:10 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 21:33:19 - [INFO] - Cliente Conectado.
+26/06/2023 21:33:19 - [INFO] - Chave publica recebida.
+26/06/2023 21:33:19 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 21:33:19 - [INFO] - Pedido para Registo recebido.
+26/06/2023 21:33:19 - [INFO] - Registo Cliente pedro com sucesso.
+26/06/2023 21:33:19 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 21:33:34 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+26/06/2023 21:33:34 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+26/06/2023 21:33:34 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+26/06/2023 21:33:39 - [INFO] - Mensagem para um cliente enviada.
+26/06/2023 22:25:32 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 22:25:35 - [INFO] - Cliente Conectado.
+26/06/2023 22:25:35 - [INFO] - Chave publica recebida.
+26/06/2023 22:25:35 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 22:25:35 - [INFO] - Pedido para Login recebido.
+26/06/2023 22:25:43 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 22:25:43 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 22:26:40 - [INFO] - Cliente Conectado.
+26/06/2023 22:26:40 - [INFO] - Chave publica recebida.
+26/06/2023 22:26:40 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 22:26:40 - [INFO] - Pedido para Login recebido.
+26/06/2023 22:26:40 - [INFO] - Login Cliente Joao com sucesso.
+26/06/2023 22:26:40 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 22:26:43 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+26/06/2023 22:26:43 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+26/06/2023 22:26:43 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+26/06/2023 22:27:09 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 22:27:11 - [INFO] - Cliente Conectado.
+26/06/2023 22:27:11 - [INFO] - Chave publica recebida.
+26/06/2023 22:27:11 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 22:27:11 - [INFO] - Pedido para Login recebido.
+26/06/2023 22:27:16 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 22:27:16 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 22:27:24 - [INFO] - Cliente Conectado.
+26/06/2023 22:27:24 - [INFO] - Chave publica recebida.
+26/06/2023 22:27:24 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 22:27:24 - [INFO] - Pedido para Login recebido.
+26/06/2023 22:27:24 - [INFO] - Login Cliente Joao com sucesso.
+26/06/2023 22:27:24 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 22:27:29 - [INFO] - Nome do cliente comunicador enviado para o cliente comunicado.
+26/06/2023 22:27:29 - [INFO] - Pacote para informar uma comunicação entre dois clientes enviada.
+26/06/2023 22:27:29 - [INFO] - Chave AES para a comunicação dos clientes enviada.
+26/06/2023 22:27:37 - [INFO] - Mensagem para um cliente enviada.
+26/06/2023 22:27:44 - [INFO] - Mensagem para um cliente enviada.
+26/06/2023 22:27:58 - [INFO] - Mensagem para um cliente enviada.
+26/06/2023 22:30:22 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 22:30:22 - [INFO] - Cliente Conectado.
+26/06/2023 22:30:22 - [INFO] - Chave publica recebida.
+26/06/2023 22:30:22 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 22:30:23 - [INFO] - Pedido para Login recebido.
+26/06/2023 22:30:28 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 22:30:28 - [INFO] - Notificação para todos os utilizadores enviada.
+26/06/2023 22:31:05 - [INFO] - Servidor Iniciado na porta: 1234
+26/06/2023 22:31:05 - [INFO] - Cliente Conectado.
+26/06/2023 22:31:05 - [INFO] - Chave publica recebida.
+26/06/2023 22:31:05 - [INFO] - Chave AES encriptada enviada para o cliente.
+26/06/2023 22:31:05 - [INFO] - Pedido para Login recebido.
+26/06/2023 22:31:11 - [INFO] - Login Cliente admin com sucesso.
+26/06/2023 22:31:11 - [INFO] - Notificação para todos os utilizadores enviada.

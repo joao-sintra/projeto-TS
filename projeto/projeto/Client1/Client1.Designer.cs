@@ -30,7 +30,7 @@
             this.btAtualizar = new System.Windows.Forms.Button();
             this.btConversar = new System.Windows.Forms.Button();
             this.listaClientesConnectados = new System.Windows.Forms.ListBox();
-            this.txtConsola = new System.Windows.Forms.TextBox();
+            this.txtChat = new System.Windows.Forms.TextBox();
             this.btEnviarMensagem = new System.Windows.Forms.Button();
             this.txtMensagem = new System.Windows.Forms.TextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -88,7 +88,7 @@
             this.Inicio.Controls.Add(this.btAtualizar);
             this.Inicio.Controls.Add(this.btConversar);
             this.Inicio.Controls.Add(this.listaClientesConnectados);
-            this.Inicio.Controls.Add(this.txtConsola);
+            this.Inicio.Controls.Add(this.txtChat);
             this.Inicio.Controls.Add(this.btEnviarMensagem);
             this.Inicio.Controls.Add(this.txtMensagem);
             this.Inicio.Location = new System.Drawing.Point(4, 22);
@@ -131,20 +131,20 @@
             this.listaClientesConnectados.Size = new System.Drawing.Size(259, 256);
             this.listaClientesConnectados.TabIndex = 43;
             // 
-            // txtConsola
+            // txtChat
             // 
-            this.txtConsola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtConsola.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtConsola.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.txtConsola.Location = new System.Drawing.Point(5, 5);
-            this.txtConsola.Margin = new System.Windows.Forms.Padding(2);
-            this.txtConsola.Multiline = true;
-            this.txtConsola.Name = "txtConsola";
-            this.txtConsola.ReadOnly = true;
-            this.txtConsola.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConsola.Size = new System.Drawing.Size(672, 318);
-            this.txtConsola.TabIndex = 41;
-            this.txtConsola.WordWrap = false;
+            this.txtChat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtChat.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtChat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txtChat.Location = new System.Drawing.Point(5, 5);
+            this.txtChat.Margin = new System.Windows.Forms.Padding(2);
+            this.txtChat.Multiline = true;
+            this.txtChat.Name = "txtChat";
+            this.txtChat.ReadOnly = true;
+            this.txtChat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtChat.Size = new System.Drawing.Size(672, 318);
+            this.txtChat.TabIndex = 41;
+            this.txtChat.WordWrap = false;
             // 
             // btEnviarMensagem
             // 
@@ -529,7 +529,7 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Inicio;
-        private System.Windows.Forms.TextBox txtConsola;
+        private System.Windows.Forms.TextBox txtChat;
         private System.Windows.Forms.Button btEnviarMensagem;
         private System.Windows.Forms.TextBox txtMensagem;
         private System.Windows.Forms.TabControl tabControl2;

@@ -38,3 +38,20 @@ C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.xml
 C:\Users\sintr\OneDrive - IPLeiria\TS\Projeto\projeto-TS\projeto\projeto\Client1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\Client1.exe.config
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\Client1.exe
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\Client1.pdb
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\EntityFramework.dll
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\protoip.dll
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\EntityFramework.xml
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.AssemblyReference.cache
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.SuggestedBindingRedirects.cache
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.Cliente1.resources
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.Properties.Resources.resources
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.GenerateResource.cache
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.CoreCompileInputs.cache
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.csproj.CopyComplete
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.exe
+C:\Users\joaoa\Desktop\TESTE\projeto\Client1\obj\Debug\Client1.pdb
