@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Projeto criado por João Sintra 2220865, Francisco Furtadom 2220870, Rúben Amaral 2220848 
+//Unidade Curricular de Tópicos de Segurança
+//Docente: Nuno Simões
+
+using System;
 using System.Security.Cryptography;
 using System.Collections.Generic;
 using System.ComponentModel;
